@@ -5,11 +5,11 @@
 run without jscpd options:
 
 ```bash
-docker run -it -v "$(pwd):/target" --rm hata6502/jscpd
+docker run -it -v "$(pwd)":/target --rm hata6502/jscpd
 ```
 
 run with jscpd options (ex. `--gitignore`):
 
 ```bash
-docker run -it -v "$(pwd):/target" --rm hata6502/jscpd jscpd --gitignore
+docker run -it -v "$(pwd)":/target --rm hata6502/jscpd jscpd --gitignore
 ```
